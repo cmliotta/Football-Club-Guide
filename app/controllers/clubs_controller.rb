@@ -1,0 +1,2 @@
+class ClubsController < BaseController
+end
