@@ -1,0 +1,12 @@
+%body{style: "background-color: #{@club.primary_color}"}
+  .text-center{style: "color: #{@club.secondary_color}"}
+    %h1= @club.name
+    %h1.inline-block Nickname:
+    %h1.inline-block= @club.nickname
+    %div
+      %h2.inline-block Stadium:
+      %h3.inline-block #{@club.stadium}
+    %div
+      %h2.inline-block Address:
+      %h3.inline-block #{@club.address}
+    %h4.text-large= @club.description

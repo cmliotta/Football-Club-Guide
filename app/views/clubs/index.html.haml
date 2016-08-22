@@ -2,9 +2,10 @@
 /   == javascript_include_tag "angular/apps/accounts/index"
 / body ng-app="GreatHires.accounts"
 /   div(ui-view)
-%body
-  %h2 Hello
-  - @clubs.each do |club|
-    .row
-      .col-xs-1.color-red
-        = club.name
+%body.background-light-blue
+  .text-center
+    %h1 Football Clubs
+    - @clubs.each do |club|
+      %h2
+        %a.color-red{href: "clubs/#{club.id}"}
+          = club.name
